@@ -13,10 +13,11 @@
 
 *Sketch of Final Product
 ![alt text](https://github.com/hughvzz/Project1/blob/master/IMAG0177.jpg)
-*APIS to be used
+
+*APIS 
 - Google Maps
 - Twitter
 
 *Rough breakdown of tasks(whos responsible of each task)
-- front-end: laura, hugo, patricio
-- back-end: samuel
+- front-end: Laura, Hugo, Patricio
+- back-end: Samuel
