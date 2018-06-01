@@ -16,13 +16,16 @@
 
 *APIS 
 - Google Maps
-- Maps
+- -key: AIzaSyB-HoRmCr1_uW0FpLeH83f2Z7hhBf1JU10
+- -url1: Search — launch a Google Map that displays a pin for a specific place, or perform a general search and launch a map to display the results: https://www.google.com/maps/search/?api=1&parameters 
+- -url2: Directions — request directions and launch Google Maps with the results: https://www.google.com/maps/dir/?api=1&parameters
+- -url3:Display a map — launch Google Maps with no markers or directions: https://www.google.com/maps/@?api=1&map_action=map&parameters
+
+- Waze (pending)
 - Twitter
 
 *Rough breakdown of tasks(whos responsible of each task)
-- front-end: Laura, Hugo, Patricio
-- back-end: Samuel
+- Design: Laura, Patricio
+- Firebase: Patricio
+- API R&D: Samuel, Hugo
 
-*API key
-- Google Maps
-- AIzaSyB-HoRmCr1_uW0FpLeH83f2Z7hhBf1JU10
