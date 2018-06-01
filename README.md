@@ -24,5 +24,5 @@
 - back-end: Samuel
 
 *API key
--- Google Maps
+- Google Maps
 - AIzaSyB-HoRmCr1_uW0FpLeH83f2Z7hhBf1JU10
