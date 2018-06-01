@@ -28,3 +28,4 @@
 - Design: Laura, Patricio
 - Firebase: Patricio
 - API R&D: Samuel, Hugo
+
