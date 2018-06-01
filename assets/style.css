@@ -8,12 +8,16 @@
 
 /* Add some content at the bottom of the video/page */
 .content {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 100%;
+    width: 30%;
     padding: 20px;
+    right: 33%;
+}
+
+.search {
+    padding-bottom: 5px;
 }
 
 /* The navigation bar */
