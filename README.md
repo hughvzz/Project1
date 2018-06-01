@@ -16,8 +16,13 @@
 
 *APIS 
 - Google Maps
+- Maps
 - Twitter
 
 *Rough breakdown of tasks(whos responsible of each task)
 - front-end: Laura, Hugo, Patricio
 - back-end: Samuel
+
+*API key
+-- Google Maps
+- AIzaSyB-HoRmCr1_uW0FpLeH83f2Z7hhBf1JU10
