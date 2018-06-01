@@ -17,6 +17,8 @@
 *APIS 
 - Google Maps
 - -key: AIzaSyB-HoRmCr1_uW0FpLeH83f2Z7hhBf1JU10
+- -key2: AIzaSyBIrboov54xOjrltjhHee4RENcHgKDAqEA
+- key=API_KEY
 - -url1: Search — launch a Google Map that displays a pin for a specific place, or perform a general search and launch a map to display the results: https://www.google.com/maps/search/?api=1&parameters 
 - -url2: Directions — request directions and launch Google Maps with the results: https://www.google.com/maps/dir/?api=1&parameters
 - -url3:Display a map — launch Google Maps with no markers or directions: https://www.google.com/maps/@?api=1&map_action=map&parameters
