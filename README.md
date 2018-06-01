@@ -28,7 +28,7 @@ hacerlo por zonas en vez de colonias con
 - Waze (pending)
 - Twitter
 
-*Rough breakdown of tasks(whos responsible of each task)
-- Design: Laura, Patricio
+*Rough breakdown of tasks(who's responsible of each task)
+- Design: Laura
 - Firebase: Patricio
 - API R&D: Samuel, Hugo
