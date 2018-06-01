@@ -21,6 +21,10 @@
 - -url2: Directions — request directions and launch Google Maps with the results: https://www.google.com/maps/dir/?api=1&parameters
 - -url3:Display a map — launch Google Maps with no markers or directions: https://www.google.com/maps/@?api=1&map_action=map&parameters
 
+open street map
+google maps heatmaps javascript api
+hacerlo por zonas en vez de colonias con 
+
 - Waze (pending)
 - Twitter
 
