@@ -26,6 +26,7 @@
 open street map
 google maps heatmaps javascript api
 hacerlo por zonas en vez de colonias con 
+cambiar a enfoque en estudiantes del Tec para heatzones del área
 
 - Waze (pending)
 - Twitter

@@ -1,11 +1,4 @@
-function myMap() {
-    var mapOptions = {
-        center: new google.maps.LatLng(51.5, -0.12),
-        zoom: 10,
-        mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
+
 
 /* Data points defined as an array of LatLng objects */
 var heatmapData = [
@@ -25,13 +18,6 @@ var heatmapData = [
     new google.maps.LatLng(37.785, -122.435)
   ];
   
-  var sanFrancisco = new google.maps.LatLng(37.774546, -122.433523);
-  
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: sanFrancisco,
-    zoom: 13,
-    mapTypeId: 'satellite'
-  });
   
   var heatmap = new google.maps.visualization.HeatmapLayer({
     data: heatmapData
@@ -57,13 +43,6 @@ var heatMapData = [
     {location: new google.maps.LatLng(37.785, -122.435), weight: 3}
   ];
   
-  var sanFrancisco = new google.maps.LatLng(37.774546, -122.433523);
-  
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: sanFrancisco,
-    zoom: 13,
-    mapTypeId: 'satellite'
-  });
   
   var heatmap = new google.maps.visualization.HeatmapLayer({
     data: heatMapData
