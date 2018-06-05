@@ -1,3 +1,13 @@
+.nav {
+    position: absolute;
+    bottom: 10px;
+    height: 105px;
+    width: 100%;
+    background: silver;
+    padding-top: 35px;
+    padding-left: 490px;
+}
+
 #myVideo {
     position: fixed;
     right: 0;
