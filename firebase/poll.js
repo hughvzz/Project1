@@ -123,7 +123,7 @@ $(document).ready(function () {
             });
         } else { (alert("del 0 al 10"));
         }
-        $("#pGarciaRoel").text("El nivel de peligrosidad es: " + newDanGarciaRoel);
+        $("#pAvenidaDelEstado").text("El nivel de peligrosidad es: " + newDanAvenidaDelEstado);
 
     }); // end of street
 
