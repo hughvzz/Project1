@@ -13,8 +13,7 @@ $(document).ready(function () {
 
     var database = firebase.database();
 
-    //variables de las calles
-
+// variables
     var juncoDeLaVega = 0;
     var danJuncoDeLaVega = 0;
     var newDanJuncoDeLaVega = 0;
@@ -29,6 +28,8 @@ $(document).ready(function () {
     var newDanAvenidaDelEstado = 0;
 
 
+
+        //calle junco de la vega
 
     database.ref("/dangerLevel/juncoDeLaVega").on("value", function (snapshot) {
         danJuncoDeLaVega = snapshot.val().juncoDeLaVega;
@@ -52,6 +53,9 @@ $(document).ready(function () {
 
     }); // end of street
 
+        //Luis Elizondo
+
+
     database.ref("/dangerLevel/luisElizondo").on("value", function (snapshot) {
         danLuisElizondo = snapshot.val().luisElizondo;
         danLuisElizondo = parseInt(danLuisElizondo);
@@ -72,6 +76,9 @@ $(document).ready(function () {
         $("#pLuisElizondo").text("El nivel de peligrosidad es: " + newDanLuisElizondo);
 
     }); // end of street
+
+        //calle Garcia Roel
+
 
     database.ref("/dangerLevel/garciaRoel").on("value", function (snapshot) {
         danGarciaRoel = snapshot.val().garciaRoel;
@@ -94,6 +101,9 @@ $(document).ready(function () {
         $("#pGarciaRoel").text("El nivel de peligrosidad es: " + newDanGarciaRoel);
 
     }); // end of street
+
+        //Avenida del Estado
+
 
     database.ref("/dangerLevel/avenidaDelEstado").on("value", function (snapshot) {
         danAvenidaDelEstado = snapshot.val().avenidaDelEstado;
@@ -118,4 +128,4 @@ $(document).ready(function () {
     }); // end of street
 
 
-});
+}); 
