@@ -1,7 +1,7 @@
 
 
 /* Data points defined as an array of LatLng objects */
-var heatmapData = [
+/**var heatmapData = [
     new google.maps.LatLng(37.782, -122.447),
     new google.maps.LatLng(37.782, -122.445),
     new google.maps.LatLng(37.782, -122.443),
@@ -25,7 +25,7 @@ var heatmapData = [
   heatmap.setMap(map);
 
   /* Data points defined as a mixture of WeightedLocation and LatLng objects */
-var heatMapData = [
+/*var heatMapData = [
     {location: new google.maps.LatLng(37.782, -122.447), weight: 0.5},
     new google.maps.LatLng(37.782, -122.445),
     {location: new google.maps.LatLng(37.782, -122.443), weight: 2},
@@ -47,4 +47,4 @@ var heatMapData = [
   var heatmap = new google.maps.visualization.HeatmapLayer({
     data: heatMapData
   });
-  heatmap.setMap(map);
+  heatmap.setMap(map);*/
