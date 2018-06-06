@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
     <style>
 
       #map {
@@ -14,8 +24,79 @@
       }
     </style>
   </head>
+  
   <body>
+
+    <!-- /* NavBar */ -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo_safe.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            StaySafe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+       
+        </div>
+      </nav>
+
+
     <div id="map"></div>
+
+ 
+        <div class="detailsCard" > 
+          <div class="twitterCard">
+          <a class="twitter-timeline" 
+            data-width="350" data-height="350" data-theme="dark" data-link-color="#2B7BB9"
+            href="https://twitter.com/StaySafeTec?ref_src=twsrc%5Etfw">Tweets by StaySafeTec</a> 
+            <script async src="https://platform.twitter.com/widgets.js" 
+            charset="utf-8"></script>
+        </div>
+
+        <div class="securityLevels">
+
+        </div>
+        
+          </div>
+       
+ 
+
+  
+
+
+    <div class="ButtonPanel ButtonPanel-expand-lg fixed-bottom ButtonPanel-dark bg-dark">
+        <a class="ButtonPanel-brand" href="#">
+                <img src="assets/images/securityIcon.png" width="80" height="80" class="d-inline-block align-top" alt="">Security Levels</a>
+            <a class="ButtonPanel-brand" href="#"> 
+                <img src="assets/images/newsIcon.png" width="80" height="80" class="d-inline-block align-top" alt="">NewsRoom</a>
+            <a class="ButtonPanel-brand" href="#"> 
+                <img src="assets/images/ratingIcon.png" width="80" height="80" class="d-inline-block align-top" alt="">Your Rating</a>
+</div>
+
 
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
     <script>
