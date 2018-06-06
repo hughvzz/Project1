@@ -196,7 +196,7 @@
       
       function initFirebase(heatmap) {
 
-        // 10 minutes before current time.
+        // Changed time so the heatpoints wont vanish
         var startTime = new Date().getTime() - (60 * 50000000 * 1000);
 
         // Reference to the clicks in Firebase.
