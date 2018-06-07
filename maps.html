@@ -40,15 +40,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
+              
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
@@ -57,45 +54,52 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+            
             </li>
           </ul>
-       
         </div>
       </nav>
 
 
     <div id="map"></div>
+  
+    <!--TWITTER API AUTH
 
- 
+consumer_key="rGLXVdjmyyO59g1yvZskv39Ad"
+consumer_secret="yZlMRubuuVSi2RPP5T67svJsbHNPJ9kJLrb0NA3IM5jDkY2TCy"
+access_token="979050268124852225-kzJPEmC5ysS6X37a5n455t1bLGXuGAY"
+access_token_secret="NGyFZY58WcFxlJzewGIKv22r3AX0tQwcPT1Qxk1FDbB3g"
+
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+-->
+
         <div class="detailsCard" > 
           <div class="twitterCard">
           <a class="twitter-timeline" 
-            data-width="350" data-height="350" data-theme="dark" data-link-color="#2B7BB9"
+            data-width="215" data-height="350" data-theme="dark" data-link-color="#2B7BB9"
             href="https://twitter.com/StaySafeTec?ref_src=twsrc%5Etfw">Tweets by StaySafeTec</a> 
             <script async src="https://platform.twitter.com/widgets.js" 
             charset="utf-8"></script>
-        </div>
-
-        <div class="securityLevels">
-
-        </div>
-        
           </div>
-       
- 
 
-  
+          <div class="securityLevels">
+          </div>
+        </div>
 
 
-    <div class="ButtonPanel ButtonPanel-expand-lg fixed-bottom ButtonPanel-dark bg-dark">
-        <a class="ButtonPanel-brand" href="#">
-                <img src="assets/images/securityIcon.png" width="80" height="80" class="d-inline-block align-top" alt="">Security Levels</a>
-            <a class="ButtonPanel-brand" href="#"> 
-                <img src="assets/images/newsIcon.png" width="80" height="80" class="d-inline-block align-top" alt="">NewsRoom</a>
-            <a class="ButtonPanel-brand" href="#"> 
-                <img src="assets/images/ratingIcon.png" width="80" height="80" class="d-inline-block align-top" alt="">Your Rating</a>
-</div>
+        <div class="ButtonPanel ButtonPanel-expand-lg fixed-bottom ButtonPanel-dark bg-dark">
+            <a class="ButtonPanel-brand" href="#">
+              <img src="https://media.scmagazineuk.com/images/2014/07/09/twitter_626161.png" id="picTwitter" width="80" height="80" class="d-inline-block align-top"
+                alt="">
+              <p id="textTwitter">Twitter Feed</p>
+            </a>
+            <a class="ButtonPanel-brand" href="#">
+              <img src="https://i.pinimg.com/originals/c2/5c/73/c25c737ff2ec8a00db52edb49c1eccd0.png" id="picTwitter" width="80" height="80"
+                class="d-inline-block align-top" alt="">
+              <p id="textTwitter">Twitter Feed</p>
+            </a>
+          </div>
 
         
 
@@ -134,13 +138,11 @@
         controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
         controlText.style.fontSize = '100%';
         controlText.style.padding = '6px';
-        controlText.textContent = 'The map shows all clicks made in the last 10 minutes.';
         controlUI.appendChild(controlText);
       }
 
       /**
       * Starting point for running the program. Authenticates the user.
-      * @param {function()} onAuthSuccess - Called when authentication succeeds.
       */
       function initAuthentication(onAuthSuccess) {
         firebase.authAnonymously(function(error, authData) {
@@ -207,7 +209,7 @@
       
       function initFirebase(heatmap) {
 
-        // 10 minutes before current time.
+        // Changed time so the heatpoints wont vanish
         var startTime = new Date().getTime() - (60 * 50000000 * 1000);
 
         // Reference to the clicks in Firebase.
@@ -227,16 +229,7 @@
           }
         );
 
-        // Remove old data from the heatmap when a point is removed from firebase.
-        clicks.on('child_removed', function(snapshot, prevChildKey) {
-          var heatmapData = heatmap.getData();
-          var i = 0;
-          while (snapshot.val().lat != heatmapData.getAt(i).lat()
-            || snapshot.val().lng != heatmapData.getAt(i).lng()) {
-            i++;
-          }
-          heatmapData.removeAt(i);
-        });
+        
       }
 
       function getTimestamp(addClick) {

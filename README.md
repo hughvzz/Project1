@@ -28,10 +28,10 @@ google maps heatmaps javascript api
 hacerlo por zonas en vez de colonias con 
 cambiar a enfoque en estudiantes del Tec para heatzones del área
 
-- Waze (pending)
 - Twitter
 
 *Rough breakdown of tasks(who's responsible of each task)
-- Design: Laura
+- CSS: Laura
 - Firebase: Patricio
-- API R&D: Samuel, Hugo
+- Google API R&D: Hugo
+- Twitter API R&D: Sam
