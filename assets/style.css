@@ -77,3 +77,10 @@
         max-height: 10px;
     }
 
+    .detailsCard{
+        display: none;
+    }
+
+    .detailsCard2{
+        display: none;
+    }
