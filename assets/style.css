@@ -8,10 +8,12 @@
     position:fixed;
     width: 290px;
     height: 350px;
-    bottom: 240px;
+    top: 120px;
+    bottom: 16px;
     right:10px;
     z-index: 30;
     font-family: sans-serif;
+    overflow-y: scroll;
 }
 
 .detailsCard {
@@ -21,17 +23,7 @@
     z-index: 10;
     }
 
-.detailsCard2222 {
-        background:rgb(55, 58, 63);
-        font-family: sans-serif;
-        color: #F5F8FA;
-        width: 290px;
-        height: 350px;
-        position:fixed;
-        top: 120px;
-        right:10px;
-        z-index: 10;
-        }
+
 
     #textTwitter {
    
