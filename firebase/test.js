@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     var config = {
         apiKey: "AIzaSyCuQbQqd_cEpl-3o21gRt2uLCXLr3wAWNc",
         authDomain: "staysafe-cdbd9.firebaseapp.com",
@@ -35,6 +36,8 @@ $(document).ready(function () {
         danJuncoDeLaVega = parseInt(danJuncoDeLaVega);
         $("#pJuncoDeLaVega").text(snapshot.val().juncoDeLaVega);
         $("#pJuncoDeLaVega").text("El nivel de peligrosidad es: " + danJuncoDeLaVega);
+        $("#mapJuncoDeLaVega").text(snapshot.val().juncoDeLaVega);
+        $("#mapJuncoDeLaVega").text("El nivel de peligrosidad es: " + danJuncoDeLaVega);
     });
 
     $("#bJuncoDeLaVega").click(function () {
@@ -116,6 +119,10 @@ $(document).ready(function () {
         $("#pGarciaRoel").text("El nivel de peligrosidad es: " + newDanGarciaRoel);
 
     }); // end of street
+    $("document").load(function () {
+
+        $("#pJuncoDeLaVega").text("El nivel de peligrosidad es: " + newDanJuncoDeLaVega);
 
 
+    }); 
 });
