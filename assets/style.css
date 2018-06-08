@@ -4,6 +4,15 @@
     justify-content:center;
     }
 
+.detailsCard2 {
+    position:fixed;
+    width: 290px;
+    height: 350px;
+    bottom: 240px;
+    right:10px;
+    z-index: 30;
+    font-family: sans-serif;
+}
 
 .detailsCard {
     position:fixed;
@@ -11,6 +20,18 @@
     left:10px;
     z-index: 10;
     }
+
+.detailsCard2222 {
+        background:rgb(55, 58, 63);
+        font-family: sans-serif;
+        color: #F5F8FA;
+        width: 290px;
+        height: 350px;
+        position:fixed;
+        top: 120px;
+        right:10px;
+        z-index: 10;
+        }
 
     #textTwitter {
    
@@ -54,8 +75,5 @@
     
     .botones {
         max-height: 10px;
-<<<<<<< HEAD
     }
-=======
-    }
->>>>>>> 984a0410d564a15a113ad582571096695f3d4cdc
+
