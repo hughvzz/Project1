@@ -54,8 +54,12 @@
     
     .botones {
         max-height: 10px;
-<<<<<<< HEAD
     }
-=======
+
+    .detailsCard{
+        display: none;
     }
->>>>>>> 984a0410d564a15a113ad582571096695f3d4cdc
+
+    .detailsCard2{
+        display: none;
+    }
