@@ -2,6 +2,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
+    
     }
 
 .detailsCard2 {
@@ -27,8 +28,9 @@
 
     #textTwitter {
    
-        text-align: left;
-        margin-left:40px;
+    text-align: center;
+    margin-right: 5px;
+    color:lightskyblue;
     
     }
     
@@ -36,19 +38,14 @@
        
     align-items: center;
     padding-left:30px;
-    
+    color: lightskyblue;
     }
     
-    #picTwitter {
-        margin-left:40px;
+    .ButtonPanel-brand {
+        margin-right: 50px;
     }
     
-    #picDanger {
-        padding-left:30px;
-    
-    
-    }
-    
+/*   
     .ButtonPanel-brand1 {
         color: white;
         line-height: 15px;
@@ -63,7 +60,7 @@
         padding-right:50px;
         max-height: 120px;
     
-    }
+    } */
     
     .botones {
         max-height: 10px;
@@ -78,10 +75,57 @@
     }
 
     .btn {
+        background: blue;
+        color: white;
         width: 60px;
         height: 30px;
         font-size: 10px;
         text-align: center;
     }
 
-    @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
+    .card-body {
+        background: gray;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #juncoDeLaVega {
+        text-decoration: underline;
+    }
+
+    #vJuncoDeLaVega {
+    width: 106px;
+    height: 26px;
+    font-size:11px;
+    }
+
+
+    #luisElizondo {
+        text-decoration: underline;
+    }
+
+    #vLuisElizondo {
+    width: 106px;
+    height: 26px;
+    font-size:11px;
+    }
+
+    #garciaRoel {
+        text-decoration: underline;
+    }
+
+    #vGarciaRoel {
+        width: 106px;
+        height: 26px;
+        font-size:11px;
+    }
+
+    #avenidaDelEstado {
+        text-decoration: underline;
+    }
+
+    #vAvenidaDelEstado {
+        width: 106px;
+        height: 26px;
+        font-size:11px;
+    }
