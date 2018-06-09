@@ -1,4 +1,5 @@
 $(document).ready(function () {
+ 
 
 
     var config = {
@@ -35,9 +36,10 @@ $(document).ready(function () {
         danJuncoDeLaVega = snapshot.val().juncoDeLaVega;
         danJuncoDeLaVega = parseInt(danJuncoDeLaVega);
         $("#pJuncoDeLaVega").text(snapshot.val().juncoDeLaVega);
-        $("#pJuncoDeLaVega").text("El nivel de peligrosidad es: " + danJuncoDeLaVega);
+        $("#pJuncoDeLaVega").text("Current danger level: " + danJuncoDeLaVega);
         $("#mapJuncoDeLaVega").text(snapshot.val().juncoDeLaVega);
-        $("#mapJuncoDeLaVega").text("El nivel de peligrosidad es: " + danJuncoDeLaVega);
+        $("#mapJuncoDeLaVega").text("Current danger level: " + danJuncoDeLaVega);
+
     });
 
     $("#bJuncoDeLaVega").click(function () {
@@ -49,9 +51,8 @@ $(document).ready(function () {
             database.ref("/dangerLevel/juncoDeLaVega").set({
                 juncoDeLaVega: newDanJuncoDeLaVega
             });
-        } else { (alert("del 0 al 10"));
         }
-        $("#pJuncoDeLaVega").text("El nivel de peligrosidad es: " + newDanJuncoDeLaVega);
+        $("#pJuncoDeLaVega").text("Current danger level: " + newDanJuncoDeLaVega);
 
     }); // end of street
 
@@ -59,7 +60,7 @@ $(document).ready(function () {
         danLuisElizondo = snapshot.val().luisElizondo;
         danLuisElizondo = parseInt(danLuisElizondo);
         $("#pLuisElizondo").text(snapshot.val().luisElizondo);
-        $("#pLuisElizondo").text("El nivel de peligrosidad es: " + danLuisElizondo);
+        $("#pLuisElizondo").text("Current danger level: " + danLuisElizondo);
     });
 
     $("#bLuisElizondo").click(function () {
@@ -70,9 +71,8 @@ $(document).ready(function () {
             database.ref("/dangerLevel/luisElizondo").set({
                 luisElizondo: newDanLuisElizondo
             });
-        } else { (alert("del 0 al 10"));
         }
-        $("#pLuisElizondo").text("El nivel de peligrosidad es: " + newDanLuisElizondo);
+        $("#pLuisElizondo").text("Current danger level: " + newDanLuisElizondo);
 
     }); // end of street
 
@@ -80,7 +80,7 @@ $(document).ready(function () {
         danGarciaRoel = snapshot.val().garciaRoel;
         danGarciaRoel = parseInt(danGarciaRoel);
         $("#pGarciaRoel").text(snapshot.val().garciaRoel);
-        $("#pGarciaRoel").text("El nivel de peligrosidad es: " + danGarciaRoel);
+        $("#pGarciaRoel").text("Current danger level: " + danGarciaRoel);
 
     });
 
@@ -92,9 +92,8 @@ $(document).ready(function () {
             database.ref("/dangerLevel/garciaRoel").set({
                 garciaRoel: newDanGarciaRoel
             });
-        } else { (alert("del 0 al 10"));
         }
-        $("#pGarciaRoel").text("El nivel de peligrosidad es: " + newDanGarciaRoel);
+        $("#pGarciaRoel").text("Current danger level: " + newDanGarciaRoel);
 
     }); // end of street
 
@@ -102,7 +101,7 @@ $(document).ready(function () {
         danAvenidaDelEstado = snapshot.val().avenidaDelEstado;
         avenidaDelEstado = parseInt(avenidaDelEstado);
         $("#pAvenidaDelEstado").text(snapshot.val().avenidaDelEstado);
-        $("#pAvenidaDelEstado").text("El nivel de peligrosidad es: " + danAvenidaDelEstado);
+        $("#pAvenidaDelEstado").text("Current danger level: " + danAvenidaDelEstado);
 
     });
 
@@ -114,14 +113,16 @@ $(document).ready(function () {
             database.ref("/dangerLevel/avenidaDelEstado").set({
                 avenidaDelEstado: newDanAvenidaDelEstado
             });
-        } else { (alert("del 0 al 10"));
         }
-        $("#pGarciaRoel").text("El nivel de peligrosidad es: " + newDanGarciaRoel);
+        $("#pGarciaRoel").text("Current danger level: " + newDanGarciaRoel);
 
     }); // end of street
     $("document").load(function () {
 
         $("#pJuncoDeLaVega").text("El nivel de peligrosidad es: " + newDanJuncoDeLaVega);
+
+    $("#pLuisElizondo").text("Current danger level: " + newDanLuisElizondo);
+
 
 
     }); 

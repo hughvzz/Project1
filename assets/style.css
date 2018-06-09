@@ -28,9 +28,9 @@
 
     #textTwitter {
    
-        text-align: center;
-     
-      margin-right: 5px;
+    text-align: center;
+    margin-right: 5px;
+    color:lightskyblue;
     
     }
     
@@ -38,22 +38,14 @@
        
     align-items: center;
     padding-left:30px;
-    
+    color: lightskyblue;
     }
     
-    /* #picTwitter {
-        margin-left:40px;
+    .ButtonPanel-brand {
+        margin-right: 50px;
     }
     
-    #picDanger {
-        padding-left:30px;
-    
-    
-    } */
-    
-   
-    
-  
+/*   
     .ButtonPanel-brand1 {
         color: white;
         line-height: 15px;
@@ -68,7 +60,7 @@
         padding-right:50px;
         max-height: 120px;
     
-    }
+    } */
     
     .botones {
         max-height: 10px;
@@ -137,5 +129,7 @@
         height: 26px;
         font-size:11px;
     }
+
+
 
     @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
