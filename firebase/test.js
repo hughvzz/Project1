@@ -51,7 +51,6 @@ $(document).ready(function () {
             database.ref("/dangerLevel/juncoDeLaVega").set({
                 juncoDeLaVega: newDanJuncoDeLaVega
             });
-        } else { (alert("del 0 al 10"));
         }
         $("#pJuncoDeLaVega").text("Current danger level: " + newDanJuncoDeLaVega);
 
@@ -72,7 +71,6 @@ $(document).ready(function () {
             database.ref("/dangerLevel/luisElizondo").set({
                 luisElizondo: newDanLuisElizondo
             });
-        } else { (alert("del 0 al 10"));
         }
         $("#pLuisElizondo").text("Current danger level: " + newDanLuisElizondo);
 
@@ -94,7 +92,6 @@ $(document).ready(function () {
             database.ref("/dangerLevel/garciaRoel").set({
                 garciaRoel: newDanGarciaRoel
             });
-        } else { (alert("del 0 al 10"));
         }
         $("#pGarciaRoel").text("Current danger level: " + newDanGarciaRoel);
 
@@ -116,7 +113,6 @@ $(document).ready(function () {
             database.ref("/dangerLevel/avenidaDelEstado").set({
                 avenidaDelEstado: newDanAvenidaDelEstado
             });
-        } else { (alert("del 0 al 10"));
         }
         $("#pGarciaRoel").text("Current danger level: " + newDanGarciaRoel);
 

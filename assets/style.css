@@ -76,3 +76,12 @@
     .detailsCard2{
         display: none;
     }
+
+    .btn {
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }

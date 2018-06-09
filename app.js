@@ -6,13 +6,11 @@ $(document).ready(function () {
         });
     });
 
-    $(document).ready(function () {
 
-        $("#picDanger").click(function () {
-            $(".detailsCard2").toggle("slow", function () {
+    $("#picDanger").click(function () {
+        $(".detailsCard2").toggle("slow", function () {
 
-            });
         });
-    
     });
+
 });

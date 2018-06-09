@@ -15,7 +15,9 @@
     }
 
     /* Makes the map page fill the window. */
-      html, body {
+
+    html,
+    body {
       height: 100%;
       margin: 0;
       padding: 0;
@@ -85,38 +87,64 @@ auth.set_access_token(access_token, access_token_secret)
       <div class="card-body">
         <h5 class="card-title">Danger Level: 1 - 10</h5>
 
-        <div class="nombres text-left">
+        <div class="nombres text-center">
           <div id="juncoDeLaVega">Junco de la vega</div>
           <div id="mapJuncoDeLaVega">Actual danger level: </div>
+          <form class="poll" id="pollJuncoDeLaVega" name="juncoDeLaVega">
+            <input type="text" name="vJuncoDeLaVega" id="vJuncoDeLaVega" value="Rate from 1 to 10">
+            <input class="btn" id="bJuncoDeLaVega" type="button" value="SUBMIT">
+          </form>
         </div>
-<br>
-        <div class="nombres text-left">
-          <div id="luisElizondo">Luis Elizondo</div>
-          <div id="pLuisElizondo">Actual danger level: </div>
-
-        </div>
-        <br>
-
-        <div class="nombres text-left">
-          <div id="garciaRoel">Garcia Roel</div>
-          <div id="pGarciaRoel">Actual danger level: </div>
-
-        </div>
-        <br>
-        <div class="nombres text-left">
-          <div id="avenidaDelEstado">Avenida Del Estado</div>
-          <div id="pAvenidaDelEstado">Actual danger level: </div>
-
-        </div>
-
-
-        <br>
-
-        <a href="#" class="btn btn-primary">Grade</a>
       </div>
 
+      <div class="nombres text-center">
+        <div id="luisElizondo">Luis Elizondo</div>
+        <div id="pLuisElizondo">Actual danger level: </div>
+        <form class="poll" id="pollLuisElizondo" name="luisElizondo">
+          <input type="text" name="vLuisElizondo" id="vLuisElizondo" value="Rate from 1 to 10">
+          <input class="btn" id="bLuisElizondo" type="button" value="SUBMIT">
+
+        </form>
+      </div>
+      <br>
+
+
+
+      <div class="nombres text-center">
+        <div id="garciaRoel">Garcia Roel</div>
+        <div id="pGarciaRoel">Actual danger level: </div>
+
+      </div>
+      <form class="poll" id="pollGarciaRoel" name="garciaRoel">
+        <input type="text" name="vGarciaRoel" id="vGarciaRoel" value="Rate from 1 to 10">
+        <input class="btn" id="bGarciaRoel" type="button" value="SUBMIT">
+
+      </form>
+    <br>
+
+
+    <div class="nombres text-center">
+      <div id="avenidaDelEstado">Avenida Del Estado</div>
+      <div id="pAvenidaDelEstado">Actual danger level: </div>
 
     </div>
+    <form class="poll" id="pollAvenidaDelEstado" name="avenidaDelEstado">
+      <input type="text" name="vAvenidaDelEstado" id="vAvenidaDelEstado" value="Rate from 1 to 10">
+      <input class="btn" id="bAvenidaDelEstado" type="button" value="SUBMIT">
+
+    </form>
+  </div>
+</div>
+
+
+
+
+
+  <a href="#" class="btn btn-primary">Grade</a>
+  </div>
+
+
+  </div>
 
 
   </div>
@@ -153,6 +181,7 @@ auth.set_access_token(access_token, access_token_secret)
   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
   <script src="firebase/test.js" type="text/javascript"></script>
   <script src="app.js" type="text/javascript"></script>
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
   <script>
     /**
     * Reference to Firebase database.
@@ -316,6 +345,8 @@ auth.set_access_token(access_token, access_token_secret)
 
 
   </script>
+  <script src="test.js"></script>
+
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIrboov54xOjrltjhHee4RENcHgKDAqEA&libraries=visualization&callback=initMap">
   </script>
 </body>
